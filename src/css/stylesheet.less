@@ -1,0 +1,111 @@
+@import url("./font.css");
+body {
+    overflow: hidden;
+    p {
+        margin-bottom: 0;
+        color: #FFFFFF;
+        font-family: "Titillium Web";
+    }
+}
+header {
+    section.header-section {
+        height: 192px;
+    }
+    section.nav-section{
+        top: 45%;
+        transform: translateY(-50%);
+        .nav-main {
+            .back-button {
+                max-width: 20px;
+            }
+            .input-box {
+                input {
+                    background: transparent;
+                    border: 1px solid #444040;
+                    border-top: transparent;
+                    border-left: transparent;
+                    border-right: transparent;
+                    color: white;
+                    outline: none;
+                }
+            }
+            .title {
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+.nav-section {
+    top: 50px;
+}
+section.content-section {
+    background: #000;
+    top: 110px;
+    z-index: -1;
+
+    .view-box {
+        overflow: scroll;
+        height: 80vh;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .movie-container {
+            .movie-image {
+                img {
+                    max-height: 140px;
+                }
+            }
+            .movie-name {
+                p {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100px;
+                }
+            }
+        }
+
+        &:nth-child(n+2) {
+            padding-left: 0;
+        }
+    }
+}
+
+
+.top {
+    top: 0;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.bottom {
+    bottom: 0;
+}
+.font-weight-200 {
+    font-weight: 200;
+}
+.font-weight-300 {
+    font-weight: 300;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+.bg-image-prop {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
